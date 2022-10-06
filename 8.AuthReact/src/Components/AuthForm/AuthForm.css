@@ -1,0 +1,102 @@
+.global-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.801);
+}
+.content-container button {
+  padding: 10px 12px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.801);
+}
+.container-modal {
+  position: absolute;
+  background: #f1f1f1;
+  z-index: 100;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.hide-modal {
+  display: none;
+}
+.form-auth {
+  position: relative;
+  z-index: 100;
+}
+
+.form-auth h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.form-auth label,
+.form-auth input {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+
+}
+.form-auth label {
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+.form-auth input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.btn-sign{
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  margin: 30px 0 10px 0;
+  font-size: 22px;
+  border-radius: 5px; 
+  border: none;
+  cursor: pointer;
+  background-color: rgb(83, 83, 83);
+  color: #f1f1f1;
+}
+.bottom-help-txt {
+  margin-top: 3px;
+  cursor: pointer;
+}
+.btn-close {
+  background: crimson;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  font-size: 20px;
+  color: #f1f1f1;
+  border: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  cursor: pointer;
+}

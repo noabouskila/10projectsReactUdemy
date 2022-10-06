@@ -1,0 +1,17 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 1px;
+  background-image: repeating-linear-gradient(135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+  font-family: Roboto, sans-serif;
+  height: 100vh;
+}
+
+.global-container {
+  max-width: 700px;
+  margin: 0 auto;
+}

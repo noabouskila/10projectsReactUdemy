@@ -1,0 +1,66 @@
+.container-content {
+    min-height: 100vh;
+    background: lightblue;
+    padding: 30px 50px;
+    position: absolute;
+    z-index: -1;
+    width: calc(100% - 460px);
+    margin-left: 460px;
+
+}
+.container-content h2 {
+    text-align: center;
+    font-size: 40px;
+}
+.container-content label, .container-content input {
+    display: block;
+}
+.container-content label {
+    font-size: 20px;
+    margin: 20px 0 0 5px;
+}
+
+.container-content input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+
+.container-content textarea {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 400px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.container-content button {
+    padding: 12px 25px;
+    margin-top: 10px;
+    border: none; 
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+}
+
+@media screen and (max-width: 900px){
+    .container-content {
+        width:100%;
+        margin-left: 0px;
+    }
+    .container-content h2 {
+        font-size: 27px;
+    }
+    .container-content button {
+
+        display: block;
+        margin: 20px auto;
+    }
+    
+}

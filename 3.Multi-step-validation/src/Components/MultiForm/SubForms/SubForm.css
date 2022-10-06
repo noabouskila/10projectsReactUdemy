@@ -1,0 +1,70 @@
+/* Global */
+
+form p {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+label {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+input[type=radio]{
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+}
+
+/* diet form */
+
+
+.diet-form button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: block;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+
+/* foodstyle */
+
+
+.checkbox-form p {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.checkbox-form span {
+    display: block;
+    margin: 2px 0 15px;
+}
+.checkbox-form input[type=checkbox]{
+    width: 30px;
+    height: 30px;
+}
+
+.container-nav-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-nav-btns button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 18px;
+    min-width: 150px;
+    margin: 30px 5px 0;
+}
+
+/* preferences-form */
+
+.preferences-form textarea {
+    resize: none;
+    width: 100%;
+    min-height: 100px;
+    padding: 5px;
+    font-size: 16px;
+    display: block;
+}

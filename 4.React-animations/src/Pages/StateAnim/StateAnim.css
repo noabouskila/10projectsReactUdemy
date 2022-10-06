@@ -1,0 +1,30 @@
+label {
+    display: block;
+    font-size: 22px;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    font-size: 20px;
+}
+
+ul {
+    width: 80%;
+    margin: 20px auto 0;
+    display: block;
+    font-size: 20px;
+    color: #f1f1f1;
+    list-style-type: none;
+}
+
+ul li {
+    background: linear-gradient(135deg, #9af3ed 0%, #d59cf8 100%);
+    color: #222;
+    margin: 10px 0;
+    padding: 15px 10px;
+}

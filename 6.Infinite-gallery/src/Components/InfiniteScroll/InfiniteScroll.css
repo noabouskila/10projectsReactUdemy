@@ -1,0 +1,44 @@
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+  height: auto;
+}
+
+
+form {
+  width: 100%;
+}
+form label {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+
+form input {
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-list {
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px){
+  .container {
+    margin: 0 3vw;
+  }
+  form label {
+    font-size: 18px;
+  }
+}

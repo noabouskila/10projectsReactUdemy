@@ -1,0 +1,17 @@
+.home-title {
+  margin-bottom: 10px;
+}
+.home-title span {
+  font-family: "Lobster", sans-serif;
+}
+
+.global-container p {
+  line-height: 1.4;
+  font-size: 18;
+  margin-bottom: 10px;
+}
+.global-container img {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 5px;
+}

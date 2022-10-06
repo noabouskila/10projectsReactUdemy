@@ -1,0 +1,21 @@
+.global-container {
+    min-height: 980px;
+    position: relative;
+    height: 100vh;
+}
+
+.content-container {
+    margin: 50px auto 0;
+    max-width: 700px;
+}
+.content-container h1 {
+    font-size: clamp(30px, 5vw, 50px);
+}
+.content-container p {
+    font-size: clamp(18px, 3vw, 20px);
+}
+@media screen and (max-width: 700px){
+    .content-container {
+        margin: 50px 3vw 0;
+    }
+}

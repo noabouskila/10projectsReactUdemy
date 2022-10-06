@@ -1,0 +1,89 @@
+.container-sidebar {
+  display: flex;
+  transition: transform 0.2s ease-out;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+}
+.visible-nav {
+  transform: translateX(0px)!important;
+}
+.sidebar {
+  flex-shrink: 0;
+  width: 110px;
+  height: 100vh;
+  background: #000;
+}
+
+.three-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87px;
+}
+.dot-nav {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px 0px;
+  border-radius: 50%;
+}
+.d-red {
+  background: crimson;
+}
+.d-yellow {
+  background: yellow;
+}
+.d-green {
+  background: green;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+.sidebar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 25px 0;
+}
+
+.sidebar ul li img {
+  width: 40px;
+  height: 40px;
+}
+
+
+.toggle-nav-btn {
+  position: absolute;
+  z-index: 150;
+  top: 15px;
+  left: 15px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.toggle-nav-btn img {
+  width: 25px;
+}
+
+@media screen and (max-width: 900px){
+  .container-sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar {
+    width: 80px;
+  }
+  .sidebar ul li img {
+    width: 30px;
+    height: 30px;
+  }
+  .dot-nav {
+    width: 10px;
+    height: 10px;
+  }
+ }

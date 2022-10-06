@@ -1,0 +1,22 @@
+
+.chart-container-pies {
+    width: 60%;
+    margin: 20px auto;
+}
+@media screen and (max-width: 870px) {
+    .chart-container-pies {
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+.global-container h2 {
+    font-size: clamp(20px, 2vw, 30px);
+    text-align: center;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.global-container h2:not(.global-container h2:nth-child(1)){
+    margin-top: 70px;
+}

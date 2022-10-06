@@ -1,0 +1,37 @@
+.floating-cart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #222;
+}
+
+.img-notif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-notif-container img {
+    width: 50px;
+}
+.img-notif-container .notif {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    color: #222;
+    border: 1px solid #000;
+    font-size: 20px;
+    font-weight: bolder;
+}

@@ -1,0 +1,56 @@
+.sidenav {
+    position: fixed;
+    left:0;
+    top: 0;
+    height: 100vh;
+    background: #f1f1f1;
+    background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 170px;
+}
+.sidenav a {
+    padding: 10px 10px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 22px;
+}
+.sidenav a:hover {
+    background: rgb(88, 88, 88);
+}
+.sidenav img {
+    width: 50px;
+    margin: 20px 0px 20px;
+}
+
+@media screen and (max-width: 870px) {
+    .sidenav {
+        position: absolute;
+        left:0;
+        top: 0;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: row;
+        height: 70px;
+        width: 100%;
+    }
+    .sidenav a {
+        padding: 10px 10px;
+        width: auto;
+        text-align: center;
+        text-decoration: none;
+        color: #f1f1f1;
+        font-size: 22px;
+    }
+    .sidenav img {
+        display: none;
+        width: 50px;
+        margin: 20px 0px 20px;
+    }
+}

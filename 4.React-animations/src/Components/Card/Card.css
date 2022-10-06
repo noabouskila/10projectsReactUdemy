@@ -1,0 +1,18 @@
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    margin: 15px;
+    opacity: 1;
+}

@@ -1,0 +1,19 @@
+.content {
+    padding: 10px 18vw;
+    height: 100vh;
+}
+.title {
+    font-size: clamp(50px, 4vw, 90px);
+    padding: 20px 0 30px 0;  
+}
+
+.content-txt {
+    font-size: clamp(22px, 1.5vw, 30px);
+}
+@media screen and (max-width: 600px){
+
+    .content {
+        padding: 10px 5vw;
+    }
+
+}
