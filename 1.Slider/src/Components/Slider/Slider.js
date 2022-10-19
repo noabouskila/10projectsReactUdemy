@@ -8,7 +8,7 @@ export default function Slider() {
 
     const [slideAnim, setSlideAnim] = useState({
         index : 1 ,
-        inProgress : false // progression du sliede en fonction du click : false pour ne pas que ca aille trop vite
+        inProgress : false // progression du slider en fonction du click : false : pour ne pas que ca aille trop vite
     })
 
     const nextSlide = () => {
@@ -43,11 +43,11 @@ export default function Slider() {
             }, 400)
         }
         else if(slideAnim.index === 1 && !slideAnim.inProgress){
-            setSlideAnim({index: 5, inProgress: true})
+            setSlideAnim({index: dataSlider.length, inProgress: true})
 
             // gestion du spam click : seulement apres 0,4 s quil repasse à false pour continuer à progresser
             setTimeout(() => {
-                setSlideAnim({index: 5, inProgress: false})
+                setSlideAnim({index: dataSlider.length, inProgress: false})
             }, 400)
         }
     }
@@ -78,11 +78,12 @@ export default function Slider() {
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
             <div className='container-dots'>
-
-                {Array.from({length : 5}).map((item , index) => {
+                
+                {Array.from({length : dataSlider.length}).map((item , index) => {
                     return <div 
                     className={slideAnim.index === index + 1 ? "dot active" : "dot"}
                     onClick={()=> moveDot(index+1)}
+                    // fonction anonyme sur le onclick car on lui passe des arguments pour que la fonction s'affiche seulement quand je clique dessus et non directement
                     >
                     </div>
                 })}
