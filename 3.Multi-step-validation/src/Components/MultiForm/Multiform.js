@@ -6,6 +6,7 @@ import CardBegin from './Infos/CardBegin'
 import DietForm from './SubForms/DietForm'
 import FoodStyle from './SubForms/FoodStyle'
 import Allergies from './SubForms/Allergies'
+import HateLove from './SubForms/HateLove'
 
 
 export default function MultiForm() {
@@ -29,15 +30,10 @@ export default function MultiForm() {
         // Object.keys Renvoie un tableau avec les propriete de chaque elements du tableau
         if(data){
             const newData = {...AllFormData}
-
             const firstPropNewData = Object.keys(data)[0]
-            // const firstPropNewData = Object.keys(newData)[0]
-           
-            // console.log(data[firstPropData])
 
             // le premier parametre du nouvel objet = au premier parametre de data 
             newData[firstPropNewData] = data[firstPropNewData]  
-
 
             console.log(newData[firstPropNewData])
 
@@ -45,19 +41,34 @@ export default function MultiForm() {
             setAllFormData(newData)
             
             console.log(newData)
-        }
-
-       
-       
-        
+        }    
     }
+    console.log({AllFormData})
 
+
+    // rendu des composant sous forme de tableau
+    const elements = [
+        <CardBegin modifyIndex={modifyIndex} /> ,
+        <DietForm modifyIndex={modifyIndex} />  ,
+        <FoodStyle modifyIndex={modifyIndex} /> ,
+        <Allergies modifyIndex={modifyIndex} /> ,
+        <HateLove modifyIndex={modifyIndex} />  ,
+        <CardEnd modifyIndex={modifyIndex} AllFormData={AllFormData} /> 
+    ]
 
     return (
         <div className='container-multiform'>
-            <Indicator/>
+            <Indicator formIndex={formIndex}/>
 
-            {formIndex ===1 
+            {/* rendu des composant a travers map */}
+            {elements.map((item,index) => {
+                if(formIndex === (index+1)){
+                   return  elements[index]
+                }
+            })}
+
+
+            {/* {formIndex ===1 
             ? <CardBegin modifyIndex={modifyIndex} /> 
             : formIndex ===2 
             ? <DietForm modifyIndex={modifyIndex}/>
@@ -65,8 +76,14 @@ export default function MultiForm() {
             ? <FoodStyle modifyIndex={modifyIndex}/>
             : formIndex ===4
             ? <Allergies modifyIndex={modifyIndex}/>
-            : ""
-            }
+            : formIndex ===5
+            ? <HateLove modifyIndex={modifyIndex}/>
+            : formIndex ===6
+            ? <CardEnd modifyIndex={modifyIndex}/>
+            :""
+            } */}
+
         </div>
+       
     )
 }

@@ -30,7 +30,6 @@ export default function Allergies(props) {
         }
     }
 
-
     const handleReturn = () => {
         props.modifyIndex(3)
     }
@@ -59,9 +58,7 @@ export default function Allergies(props) {
         <button onClick={handleReturn}
         type='button' className='prev'>Précédent</button>
         {/* on met type button pour ne pas quil soit compté en tant que button */} 
-        <button>Valider</button>
-
-        
+        <button>Valider</button>  
     </div>
 
 </form>
