@@ -4,9 +4,9 @@ import "./Contenu.css"
 import data from "../../assets/data"
 
 export default function Contenu() {
-    // consumer
-    const {lang} = useContext(Context)
-    console.log(lang)
+  // consumer
+  const {lang} = useContext(Context)
+  console.log(lang)
 
   return (
     <div className='content'>

@@ -14,7 +14,7 @@ if(supportedLang.indexOf(browserLang) === -1){ // n'existe pas
     browserLang = "EN" 
 } 
 
-// creation du provider qui va fournir le contexte  aux consumer/useContext AVEC le use state
+// creation du provider qui va fournir le contexte  aux consumer/useContext .il fournit aussi le useState a linterieur
 const ContextProvider = props => {
 
     // creation de l'etat : useState
@@ -31,7 +31,6 @@ const ContextProvider = props => {
         <Context.Provider value={{lang , toggleLang}}>
             {props.children}
         </Context.Provider>
-
     )   
 }
 export default ContextProvider;
