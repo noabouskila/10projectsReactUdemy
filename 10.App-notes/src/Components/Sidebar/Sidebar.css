@@ -56,7 +56,6 @@
   height: 40px;
 }
 
-
 .toggle-nav-btn {
   position: absolute;
   z-index: 150;
@@ -86,4 +85,18 @@
     width: 10px;
     height: 10px;
   }
+
+  /* .toggle-nav-btn {
+    position: absolute;
+    z-index: 150;
+    top: 15px;
+    left: 15px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .toggle-nav-btn img {
+    width: 25px;
+  } */
  }

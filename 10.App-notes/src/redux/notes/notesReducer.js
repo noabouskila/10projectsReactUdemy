@@ -22,3 +22,61 @@ const INITIAL_STATE = {
     },
   ],
 };
+
+
+// Alternative à useContext
+// stocker le state dans le store 
+// la function noteReducer prend en parametre le state et laction (changement d'etat)
+export default function notesReducer(state = INITIAL_STATE, action){
+
+  switch(action.type){
+
+    // ajouter une note
+    case "ADDNOTE" : {
+      const newNoteArr = [...state.notes]
+      newNoteArr.push(action.payload)
+    
+      return{
+        notes : newNoteArr
+      }
+    } 
+
+    // MODIFIER LA NOTE
+    case "UPDATENOTE": {
+
+      // copie
+      const newNoteArr = [...state.notes]
+
+      // la modification faite par le user
+      const actionPayload = action.payload
+
+      // trouver lelement de l'id modifié  qui match avec l'id du state 
+      const index = newNoteArr.findIndex(obj=>obj.id ===actionPayload.id)
+
+      // remplacer l'element de l'id modifié stocké dans index par action.payload
+      newNoteArr.splice(index, 1, actionPayload)
+
+      return{
+        notes : newNoteArr
+      }
+    }  
+
+    // supprimer une note
+    case "DELETENOTE": {
+      
+      const newNoteArr = [...state.notes].filter(note => note.id !== action.payload)
+      //  ca filtre et retourne que les notes qui ont des id deifferent que action.payload 
+
+      // payload : ce sont les information quon a envoyé dans payload via dispatch  que le reducer recoit
+
+      // filter : methode en js qui va filtrer selon une condition et retourner un nouveau tableau : filter a la meme  synthaxe que .map()
+
+      return{
+        notes : newNoteArr
+      }
+    }
+ 
+  }
+
+  return state
+}
